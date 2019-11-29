@@ -43,6 +43,24 @@
     text-transform: uppercase;
 }
 
+/* Gallery
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Larger than mobile */
@@ -54,6 +72,11 @@
     .form-table__sub-title {
         display: inline-block;
         background-color: #ffffff;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
