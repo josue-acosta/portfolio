@@ -10,4 +10,5 @@ else:
     app.config.from_object("config.DevelopmentConfig")
 
 # import views
-from app import views
+from app import views_home
+from app import views_about

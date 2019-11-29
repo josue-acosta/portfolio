@@ -1,5 +1,7 @@
 from app import app
 
+from flask import render_template
+
 # home pages
 @app.route('/')
 def home():
