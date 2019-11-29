@@ -1,0 +1,61 @@
+{% extends "layout/master.html" %}
+
+<!-- browser tab title -->
+{% block title %}
+Home
+{% endblock %}
+
+<!-- main body block -->
+{% block body %}
+<div class="home-container">
+
+    <!-- advert 001 -->
+    <div class="advert advert-001">
+        <div class="advert-001__image">
+            <img src="/static/images/ring.png" />
+        </div>
+
+        <div class="advert-001__subtitle">
+            <h2>engaging with flask</h2>
+        </div>
+
+        <div class="advert-001__content">
+            <p>Here I'm going to write how I interact with python's flask. Mostly how I set up my app, what I like and
+                don't like about it. Basically, how I engage with it.
+            </p>
+        </div>
+
+        <div class="advert-001__title">
+            <h1>Python &amp; Co.</h1>
+        </div>
+
+        <div class="advert-001__action">
+            <a class="button glowing-button" href="{{ url_for('engaging_with_flask') }}">Read More</a>
+        </div>
+    </div>
+    <!-- advert 002 -->
+    <div class="advert advert-002">
+        <div class="advert-002__image">
+            <img src="/static/images/anuncio-002-img.png" />
+        </div>
+
+        <div class="advert-002__content">
+            <div class="advert-002__title">
+                <h1>JS Inc.</h1>
+            </div>
+
+            <div class="advert-002__subtitle">
+                <h2>Switching Between Photos</h2>
+            </div>
+
+            <p>I'm going to make a simple JS script to switch between images</p>
+
+            <div class="advert-002__action">
+                <a class="button glowing-button" href="{{ url_for('switching_between_photos') }}">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

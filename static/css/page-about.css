@@ -1,0 +1,32 @@
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.card {
+    display: block;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card__image {
+    height: 30rem;
+}
+
+.card__title {
+    padding-top: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.card__title h1 {
+    margin-bottom: 1rem;
+}
+
+.card__content {
+    margin-top: 3rem;
+}
+
+.card__action {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3.5rem;
+}

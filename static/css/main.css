@@ -1,0 +1,146 @@
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigation__menu-list {
+    list-style: none;
+}
+
+.navigation__menu-list li {
+    /* display: inline-block; */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.navigation__menu-list li:hover {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.navigation__menu-list li:last-child {
+    margin-right: 0;
+}
+
+.navigation__menu-list h2 {
+    font-size: 2.2rem;
+    margin-bottom: .75rem;
+}
+
+.navigation__menu-list a:link,
+.navigation__menu-list a:visited {
+    display: inline-block;
+    border-top: 1px solid #111111;
+    padding-top: .8em;
+    width: 9em;
+    text-align: left;
+    color: #333333;
+    text-decoration: none;
+
+}
+
+
+
+/* Hero Image
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+    display: block;
+    height: 77vh;
+    background: url(../../static/images/hero.gif) top center no-repeat;
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Table
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+    width: 100%;
+}
+
+
+
+/* Glowing Button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.glowing-button:hover {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: none;
+    }
+
+    100% {
+        border: 1px solid #bbb;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+}
+
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer {
+    margin: 0 2rem;
+    padding: 2rem 0;
+    color: #8a8a8a;
+}
+
+.footer p,
+h6 {
+    margin-bottom: 0rem;
+}
+
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 415px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navigation__menu-list li {
+        display: inline-block;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

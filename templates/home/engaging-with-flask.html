@@ -1,0 +1,57 @@
+{% extends "home/home.html" %}
+
+{% block title %}
+Engaging With Flask
+{% endblock %}
+
+<!-- main body block -->
+{% block body %}
+<div class="card card-main">
+    <div class="card__title">
+        <h1>Engaging With Flask</h1>
+    </div>
+
+    <div class="card__content">
+        <pre><code>import flask
+
+
+# app congfigurations
+app = flask.Flask(__name__, static_url_path='/static')
+
+if app.config["ENV"] == "production":
+    app.config.from_object("config.ProductionConfig")
+else:
+    app.config.from_object("config.DevelopmentConfig")
+
+
+# home pages
+@app.route('/')
+def home():
+    return flask.render_template('home/home.html')
+
+@app.route('/engaging-with-flask')
+def engaging_with_flask():
+    return flask.render_template('home/engaging-with-flask.html')
+
+
+# about pages
+@app.route('/about')
+def about():
+    return flask.render_template('about/about.html')
+
+
+# misc pages
+@app.errorhandler(404)
+def page_not_found(error):
+    return 'You took a wrong turn. Go back.', 404
+
+
+# run app
+if __name__ == '__main__':
+    print("Python environment:", app.config["ENV"])
+    app.run()
+</code>
+</pre>
+    </div>
+</div>
+{% endblock %}

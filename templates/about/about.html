@@ -1,0 +1,83 @@
+{% extends "layout/master.html" %}
+
+<!-- browser tab title -->
+{% block title %}
+About
+{% endblock %}
+
+<!-- sub navigation menu -->
+{% block sub_nav %}
+<nav class="sub-navigation">
+    <ul class="sub-navigation__menu-list">
+        <li>
+            <a href="#">
+                <!-- <a href="{{ url_for('home') }}"> -->
+                <h2>option 1</h2>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h2>option 2</h2>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
+
+<!-- main body block -->
+{% block body %}
+<div class="card card-main">
+    <div class="card__title">
+        <h1>To Do List</h1>
+    </div>
+
+    <div class="card__content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First JS project: Flip through picture with buttons</td>
+                </tr>
+                <tr>
+                    <td><del>Design nicer to-do table</del></td>
+                </tr>
+                <tr>
+                    <td>Create a JSON object and cycle through them in the table</td>
+                </tr>
+                <tr>
+                    <td>Create a sticky footer</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://flask.palletsprojects.com/en/1.1.x/quickstart/#">quickstart</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Style Guide</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>create card sub header</td>
+                </tr>
+                <tr>
+                    <td>overall design theme</td>
+                </tr>
+                <tr>
+                    <td>website site tree</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,120 @@
+/* Home Page
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+}
+
+
+
+/* Advert 001
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.advert {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.advert-001 {
+    background-color: #f0e7de;
+    text-align: center;
+}
+
+.advert-001 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.advert-001__title h1 {
+    font-size: 3rem;
+}
+
+.advert-001__subtitle h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.advert-001__content {
+    line-height: 200%;
+}
+
+.advert-001__action {
+    margin-top: 5rem;
+}
+
+/* Advert 002
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.advert-002 {
+    background-color: #f0da50;
+}
+
+.advert-002 img {
+    display: block;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.advert-002__title h1 {
+    margin: 0 0 0 2rem;
+    /* font-size: 3rem; */
+}
+
+.advert-002__subtitle h2 {
+    font-size: 1.5rem;
+}
+
+.advert-002__content {
+    writing-mode: vertical-rl;
+    max-height: 236px;
+    padding-top: 3rem;
+    align-self: flex-end;
+}
+
+.advert-002__content p {
+    margin: 0;
+}
+
+.advert-002__action .button {
+    padding: 30px 0;
+    height: 136px;
+    margin-right: 2rem;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 415px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .home-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .home-container {
+        padding: 0;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

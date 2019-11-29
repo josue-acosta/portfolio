@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/page-home.css')}}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/page-about.css')}}" />
+    {% block css %}{% endblock %}
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="{{ hero_type }}">
+            <nav class="navigation">
+                <ul class="navigation__menu-list">
+                    <li>
+                        <a href="{{ url_for('home') }}">
+                            <h2>home</h2>
+                            where the heart is
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}">
+                            <h2>about</h2>
+                            all about this
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        {% block body %}{% endblock %}
+
+        <footer class="footer">
+            <h6>Federal Bureau of Magical Realism</h6>
+            <p><em>Invenio, Investigatio, Imperium</em></p>
+        </footer>
+
+    </div>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>

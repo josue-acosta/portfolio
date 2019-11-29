@@ -1,0 +1,54 @@
+{% extends "home/home.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/page-advert-002.css')}}" />
+{% endblock %}
+
+<!-- main body block -->
+{% block body %}
+<div class="subject-layout">
+    <div class="navigation-bar">
+        <h4>Navigation</h4>
+        <ul>
+            <li>Section 1</li>
+            <li>Section 2</li>
+            <li>Section 3</li>
+        </ul>
+    </div>
+    <div class="subject-content">
+        <div class="form-table">
+            <h1 class="form-table__title">{{ title }}</h1>
+            <div class="block-out">
+                <div class="form-table__sub-title">
+                    <span>Posted on:</span>
+                    Nov. 23, 2019
+                </div>
+                <div class="form-table__sub-title">
+                    <span>Posted on:</span>
+                    Nov. 23, 2019
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nisi ducimus quidem, est minima, rem
+            mollitia laboriosam quam, soluta voluptatem atque distinctio exercitationem nostrum voluptate harum. Vitae
+            aspernatur eveniet, corrupti nam maxime tempore fugit molestiae, inventore doloribus vero asperiores eos
+            laboriosam aut repellendus, dolores numquam excepturi repudiandae quae amet quidem!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nisi ducimus quidem, est minima, rem
+            mollitia laboriosam quam, soluta voluptatem atque distinctio exercitationem nostrum voluptate harum. Vitae
+            aspernatur eveniet, corrupti nam maxime tempore fugit molestiae, inventore doloribus vero asperiores eos
+            laboriosam aut repellendus, dolores numquam excepturi repudiandae quae amet quidem!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nisi ducimus quidem, est minima, rem
+            mollitia laboriosam quam, soluta voluptatem atque distinctio exercitationem nostrum voluptate harum. Vitae
+            aspernatur eveniet, corrupti nam maxime tempore fugit molestiae, inventore doloribus vero asperiores eos
+            laboriosam aut repellendus, dolores numquam excepturi repudiandae quae amet quidem!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam nisi ducimus quidem, est minima, rem
+            mollitia laboriosam quam, soluta voluptatem atque distinctio exercitationem nostrum voluptate harum. Vitae
+            aspernatur eveniet, corrupti nam maxime tempore fugit molestiae, inventore doloribus vero asperiores eos
+            laboriosam aut repellendus, dolores numquam excepturi repudiandae quae amet quidem!</p>
+    </div>
+</div>
+{% endblock %}
