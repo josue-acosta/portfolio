@@ -21,6 +21,14 @@ def switching_between_photos():
                                 hero_type=hero_type,
                                 title=title)
 
+@app.route('/working-with-json')
+def working_with_json():
+    hero_type = 'hero-advert'
+    title = "Working with JSON"
+    return render_template('home/working-with-json.html',
+                                hero_type=hero_type,
+                                title=title)
+
 # misc pages
 @app.route('/todo')
 def todo():

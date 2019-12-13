@@ -1,0 +1,39 @@
+{% extends "home/home.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block css %}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/page-advert-003.css')}}" />
+{% endblock %}
+
+<!-- main body block -->
+{% block body %}
+<div class="subject-layout">
+    <div class="subject-content">
+        <div class="form-table">
+            <h1 class="form-table__title">{{ title }}</h1>
+            <div class="block-out">
+                <div class="form-table__sub-title">
+                    <span>Posted on:</span>
+                    Dec. 12, 2019
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__title">
+
+            </div>
+            <div class="card__content">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{{url_for('static', filename='js/json-ad-001.js')}}"></script>
+{% endblock %}

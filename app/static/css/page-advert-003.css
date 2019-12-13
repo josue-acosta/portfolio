@@ -1,0 +1,44 @@
+.subject-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 0 2rem;
+}
+
+.navigation-bar {
+    padding: 2rem;
+    border-radius: 3px;
+    background-color: lightgray;
+}
+
+.form-table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form-table__title,
+.form-table__sub-title {
+    margin: 0;
+    padding: 5px;
+}
+
+.form-table__title {
+    border: 1px solid black;
+}
+
+.block-out {
+    background-color: #222;
+}
+
+.form-table__sub-title {
+    font-weight: bold;
+    background-color: #ffffff;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.form-table__sub-title span {
+    text-transform: uppercase;
+}
