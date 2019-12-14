@@ -42,3 +42,7 @@
 .form-table__sub-title span {
     text-transform: uppercase;
 }
+
+.card {
+    margin-bottom: 2rem;
+}
